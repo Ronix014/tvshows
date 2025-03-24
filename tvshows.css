@@ -1,3 +1,10 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #f5f1fa;
@@ -12,6 +19,7 @@ h1 {
     color: #4b0082;
     text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -78,6 +86,57 @@ h2, p, .nav a, h3 {
     padding: 10px;
 }
 
+/* TV Show Boxes */
+.tv-show {
+    margin-bottom: 30px;
+    background: #fff;
+    border: 2px solid #4b0082;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tv-show h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tv-show iframe {
+    center
+    width: 75%;
+    height: 650px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Makes the iframe a block-level element for centering */
+}
+
+.tv-show .info {
+    margin-top: 15px;
+}
+
+.tv-show .info .poster {
+    width: 500%; /* Set to a percentage or fixed value */
+    max-width: 500px; /* Limit the max size of the poster */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block; /* Ensure it's centered or aligned properly */
+    margin-left: auto; 
+    margin-right: auto; /* Centers the poster */
+}
+
+.tv-show p {
+    color: #030000;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.tv-show p strong {
+    color: #251e01;
+}
+
 /* Back to Top Button */
 .btn {
     display: block;
@@ -101,6 +160,7 @@ h2, p, .nav a, h3 {
     .container {
         width: 95%;
     }
+
     iframe {
         width: 100%;
         height: 250px;
